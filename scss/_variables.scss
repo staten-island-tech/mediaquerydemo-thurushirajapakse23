@@ -1,0 +1,30 @@
+$colors: (
+  primary: #45a29e,
+  primary-light: #66fcf1,
+  grey: #c5c6c7,
+  primary-dark: #1f2833,
+  black: #0b0c10
+);
+$desktop: 1100px;
+$laptop: 900px;
+$tablet: 600px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
