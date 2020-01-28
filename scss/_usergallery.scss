@@ -1,48 +1,49 @@
 @import "_variables.scss";
 
-.user-gallery {
+.user-gallery{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include laptop {
+  @include laptop{
     height: 90vh;
   }
 }
 
-.user-gallery-header {
+.user-gallery-header{
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
-  @include tablet {
+  @include tablet{
     font-size: 3rem;
   }
-  @include laptop {
-    font-size: 3.5rem;
+  @include laptop{
+    font-size: 4rem;
   }
-  @include desktop {
+  @include desktop{
     font-size: 5rem;
   }
 }
 
-.user-gallery-gallery {
+.user-gallery-gallery{
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: space-around;
+  align-items: center;
   margin: 0 auto;
-  @include laptop {
-    height: 60%;
+  @include laptop{
     width: 90%;
     flex-direction: row;
   }
-  .user-gallery-image {
+
+  .user-gallery-image{
     width: 90%;
     padding: 1rem;
-    @include laptop {
+    @include laptop{
       height: 30rem;
       width: auto;
     }
   }
 }
+
